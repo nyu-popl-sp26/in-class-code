@@ -1,0 +1,4 @@
+[debug] [in-class-code-build] Classpath dependencies List()
+[debug] [in-class-code-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'in-class-code-build' to '/Users/elaineli/Programs/popl-sp26/in-class-code/project/.bloop/in-class-code-build.json'
+[success] Generated .bloop/in-class-code-build.json

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <option name="separateProdTestSources" value="true" />
+    <profile name="sbt 1" modules="in-class-code,in-class-code.main,in-class-code.test,in-class-code_7155,in-class-code_7155.main,in-class-code_7155.test" />
+  </component>
+</project>
