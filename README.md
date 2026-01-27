@@ -20,7 +20,7 @@ in-class-code
 │   │   └── scala
 │   │       ├── popl.class01 (package for Scala source files from Class 1)
 │   │       │   └── worksheet.sc (a simple worksheet)
-│   │       └── popl.class03 (package for Scala source files from Class 2)
+│   │       └── popl.class02 (package for Scala source files from Class 2)
 │   │           └── worksheet.sc  (a simple worksheet)
 │   │           
 │   └── test
@@ -60,7 +60,7 @@ Once you've followed the above instructions, start the VM. Open the Devices menu
 
 #### Homebrew [OSX only] 
  
-Homebrew is a package manager for OSX, which makes installing development software much easier. We will use it to install Sbt. You will find it useful in the future for install of other things as well.
+Homebrew is a package manager for OSX, which makes installing development software much easier. We will use it to install Sbt. You will find it useful in the future for installing other things as well.
 
 * [OSX] Install using the instructions [here](http://brew.sh/)
 
@@ -74,7 +74,7 @@ XCode is a development environment for Macs. We will not be using it, but instal
 
 * [Ubuntu] Git is pre-installed on Ubuntu.
 * [OSX] From terminal: ```brew install git```
-* You can test the install of git on your system by running the command `git` from terminal. You should see usage information.
+* You can test the installation of git on your system by running the command `git` from terminal. You should see usage information.
 * Finally run the following commands from terminal:<br>
    ```git config --global user.email "your@email.com"```<br>
    ```git config --global user.name "Your Name"```<br>
@@ -91,14 +91,14 @@ Here are some Git-related resources:
 
 We will need the Java Development Kit (JDK) to run Sbt and Scala programs.
 
-* [Ubuntu] From terminal: ```sudo apt install default-jdk```
-* [OSX] From terminal: ```brew install java```
+* [Ubuntu] From terminal: ```sudo apt install openjdk-25-jdk```
+* [OSX] From terminal: ```brew install openjdk@25```
 
 #### Scala and Sbt
 
-We will be using [Scala](http://www.scala-lang.org/) for most programming assignments throughout this course. We standardize to version 3.8.1 of the Scala language. The installation of the correct Scala version as well as any libraries that our code will depend on is handled through sbt. 
+We will be using [Scala](http://www.scala-lang.org/) for most programming assignments throughout this course. We will standardize to version 3.8.1 of the Scala language. The installation of the correct Scala version as well as any libraries that our code will depend on is handled through sbt. 
 
-sbt is an open source build tool for Scala projects, similar to Maven or Ant. More information can be found [here](https://en.wikipedia.org/wiki/SBT_%28software%29). (You will need this to do the homework assignments)
+sbt is an open source build tool for Scala projects, similar to Maven or Ant. More information can be found [here](https://en.wikipedia.org/wiki/SBT_%28software%29). (You will need this to do the homework assignments.)
 
 * [OSX]  From terminal: ```brew install sbt```
 * [Ubuntu] From terminal:<br> 
@@ -120,43 +120,36 @@ sbt is an open source build tool for Scala projects, similar to Maven or Ant. Mo
 
 #### IntelliJ Idea
 
-We will be using the [IntelliJ Idea Java IDE](https://www.jetbrains.com/idea/) in class and we will be demonstrating development techniques with this IDE that will make your life easier. If you prefer to use a different IDE, go for it. Essentially, any IDE that provides Scala/sbt integration should work. Though, we will only provide support for IntelliJ Idea.
+We will be using the [IntelliJ Idea IDE](https://www.jetbrains.com/idea/) in class and we will be demonstrating development techniques with this IDE that will make your life easier. If you prefer to use a different IDE, go for it. Essentially, any IDE that provides Scala/sbt integration should work. Though, we will only provide support for IntelliJ Idea.
 
-To install IntelliJ Idea, proceed as follows:
+To install IntelliJ Idea:
 
 * Sign up for [free student licenses](https://www.jetbrains.com/shop/eform/students) (Reminder: use your NYU email)
-* In the meantime, download the [Ultimate Edition Free 30-day trial](https://www.jetbrains.com/idea/download/) of Intellij.
+* In the meantime, download the [Ultimate Edition Free 30-day trial](https://www.jetbrains.com/idea/download/) of IntelliJ.
 * [Ubuntu] Untar the downloaded archive by clicking it and then using the "Extract" menu item. Extract to location of your choice. Open that location and follow the instructions inside the "Install-Linux-tar.txt" file.
 * [OSX] Open the disk image and use the installer.
-* When prompted, select "Evaluate for 30 days". Install the license when you get them in an email from Jetbrains.
-* During the "Customize" phase on the "*Featured* plugins screen",
-  select and install the 'Scala' plugin. It should be in the top left
-  corner of this screen. This is necessary to get sbt integration and
-  Scala support in Intellij.
+* When prompted, select "Evaluate for 30 days". Install the license when you get them in an email from JetBrains.
 * For reference, here is a link to the [Intellij documentation](https://www.jetbrains.com/idea/help/basic-concepts.html).
 
-There are many, many free plugins available for Intellij. You should feel free to install anything that sounds useful to you. You can explore what is available from the "Preferences" menu in Intellij.
+To install the Scala plugin in IntelliJ Idea: 
+* From "IntelliJ IDEA" in the top menu bar, select "Settings". In the Settings window, select "Plugins" from the left menu bar, and search for and install 'Scala'.
+
+There are many, many free plugins available for IntelliJ. You should feel free to install anything that sounds useful to you. You can explore what is available from the "Plugins" menu under "Settings".
 
 
-### Importing a Scala sbt Project into Intellij
+### Importing a Scala sbt Project into IntelliJ
 
 Before importing a Scala project, please make sure that you have the Scala plugin installed.
 
-To import the Scala sbt project for the in-class-code into Intellij, do the following:
+To import the Scala sbt project for the in-class-code into IntelliJ, do the following:
 
-* Open Intellij and proceed with one of the following two options:
-
-  Option 1:
-   
-  * Click the "Open" menu item. You can do this either from the splash screen after opening Intellij or if you skip the spash screen by choosing "Open" in the "File" submenu of the main menu at the top.
+* Open IntelliJ and click the "Open" menu item. You can do this either directly from the splash screen after opening IntelliJ, or by clicking "File" in the top menu bar. 
     
-  * Navigate to your cloned repository and select the "scala-in-class-code"
-    directory and click "OK".
+* Navigate to your cloned repository, select the "in-class-code" directory and click "OK".
   
-  * Click "Trust Project".
+* When prompted, click "Trust Project".
 
-  * Click the radio button "Open as: sbt project", then click "OK".
-
+* When prompted, click "Load sbt Project".
 
 * It may take IntelliJ a few minutes to initialize the project. Future
   project imports will be faster.
@@ -164,11 +157,12 @@ To import the Scala sbt project for the in-class-code into Intellij, do the foll
 * If you are prompted with a message like "Unregistered VCS root
   detected", simply click "Add root".
 
-* Open the worksheet `src/main/scala/pl.class01/worksheet.sc` and type in some Scala
-  expressions. Alternatively, start the Scala REPL by
-  typing `scala` in Terminal. 
+* Open the worksheet `src/main/scala/popl/class01/worksheet.sc` and type in some Scala
+  expressions. You can run the worksheet by clicking the green "Run" button. Output will appear in a right panel. 
 
-* Post on Brightspace if you need help, most likely others have had the
+* You can start the Scala REPL by typing `scala` in the terminal, which you can open from the bottom left menu. 
+
+* Post on Brightspace if you need help; most likely others have had the
   same problem and may have figured it out.
 
 
@@ -205,13 +199,12 @@ The type `Int` names the class `Int` in the
 package `scala`. Packages in Scala partition the global
 name space and provide mechanisms for information hiding, similar to
 Java packages. Values of class `Int` correspond to values of
-Java's primitive type `int` (Scala makes no difference
-between primitive and object types). More generally, all of Java's
+Java's primitive type `int` (Scala does not differentiate between primitive and object types). More generally, all of Java's
 primitive types have corresponding classes in the `scala` package.
 
 We can reuse the automatically generated name `res0` to
 refer to the computed value in subsequent expressions (this only works
-in the REPL but not in a worksheet):
+in the REPL and not in a worksheet):
 
 ```scala
 scala> res0 * res0
@@ -227,7 +220,7 @@ val res2: Int = -2
 
 In addition to the `? :` operator, Java also has if-then-else
 statements. Scala, on the other hand, is a functional language and
-makes no difference between expressions and statements: every
+does not differentiate between expressions and statements: every
 programming construct is an expression that evaluates to some
 value. In particular, we can use if-then-else expressions where we
 would normally use if-then-else statements in Java.
@@ -250,7 +243,7 @@ and type are not printed by the REPL. In the example above, it only
 prints `Large!`, which is the side effect of evaluating the
 expression.
 
-The following example shows that the expression indeed returns `()`.
+Here is one way we can verify that the expression evaluates to `()`.
 
 ```scala
 scala> val u = if res1 > 2 then println("Large!") else println("Not so large!")
@@ -260,11 +253,20 @@ scala> u == ()
 val res3: Boolean = true
 ```
 
+Here is another way we can verify the same fact, this time by making use of Scala's type system.
+```scala
+scala> val u: Unit = if res1 > 2 then println("Large!") else println("Not so large!")
+Large!
+
+scala> u == ()
+val u: Unit = ()
+```
+
 
 #### Names
 
 We can use the `val` keyword to give a user-defined name to
-a value, so that we can subsequently refer to it in other expressions:
+a value, so that we can refer to it in subsequent expressions:
 ```scala
 scala> val x = 3
 x: Int = 3
@@ -300,7 +302,7 @@ scala> y = 3
 y: Int = 3
 ```
 The type of a variable is the type inferred from its initialization
-expression. This type is fixed. Attempting to reassign a variable to a
+expression. A variable's type is fixed. Attempting to reassign a variable to a
 value of incompatible type results in a type error:
 ```scala
 scala> y = "Hello"
@@ -329,13 +331,12 @@ def max(x: Int, y: Int): Int
 Function definitions start with `def`, followed by the
 function's name, in this case `max`. After the name comes a
 comma separated list of parameters enclosed by parenthesis, here
-`x` and `y`. Note that the types of parameters
+`x` and `y`. Note that the types of function parameters
 must be provided explicitly since the Scala compiler does not infer
 parameter types. The type annotation after the parameter list gives
 the result type of the function. The result type is followed by the
 equality symbol, indicating that the function returns a value, and the
-body of the function which computes that value. The expression in the
-body that defines the result value is enclosed in curly braces.
+body of the function which computes that value. 
 
 If the defined function is not recursive, as is the case for
 `max`, the result type can be omitted because it is
@@ -413,7 +414,7 @@ However, as in Java, you cannot redefine a name in the same scope:
   val a = 3
   val a = 4 // does not compile
 ```
-Also, unlike in Java, you can't refer to a name before it is bound in
+Also, unlike in Java, you cannot refer to a name before it is bound in
 the same block, even if that name has been bound in an outer scope:
 
 ```scala
