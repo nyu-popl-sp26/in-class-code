@@ -8,3 +8,4 @@
 .project
 *~
 .metals
+.DS_Store
