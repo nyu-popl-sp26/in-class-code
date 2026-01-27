@@ -161,7 +161,7 @@ To import the Scala sbt project for the in-class-code into IntelliJ, do the foll
 * Open the worksheet `src/main/scala/popl/class01/worksheet.sc` and type in some Scala
   expressions. You can run the worksheet by clicking the green "Run" button. Output will appear in a right panel. 
 
-* You can start the Scala REPL by typing `scala` in the terminal, which you can open from the bottom left menu. 
+* Alternatively, you can start the Scala REPL by typing `scala` in the terminal, which you can open from the bottom left menu. 
 
 * Post on Brightspace if you need help; most likely others have had the
   same problem and may have figured it out.
