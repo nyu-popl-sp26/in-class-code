@@ -1,5 +1,0 @@
-[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /Users/elaineli/Programs/popl-sp26/in-class-code/target/scala-3.8.1/classes.bak[0m
-[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /Users/elaineli/Programs/popl-sp26/in-class-code/target/scala-3.8.1/classes.bak[0m
-[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /Users/elaineli/Programs/popl-sp26/in-class-code/target/scala-3.8.1/classes.bak[0m
