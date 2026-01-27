@@ -76,13 +76,14 @@ XCode is a development environment for Macs. We will not be using it, but instal
 * [OSX] From terminal: ```brew install git```
 * You can test the installation of git on your system by running the command `git` from terminal. You should see usage information.
 * Finally run the following commands from terminal:<br>
-   ```git config --global user.email "your@email.com"```<br>
-   ```git config --global user.name "Your Name"```<br>
-   (The email should be the same email you used to register your github account)
+ ```git config --global user.name "Your Name"```<br>
+ ```git config --global user.email "your@email.com"```<br>
+   (The email should be the same email you used to register your GitHub account)
+* 
 
 Here are some Git-related resources:
 * If you are unfamiliar with Git, watch the [first two git basics video](http://git-scm.com/videos).
-* If you are unfamiliar with Github, watch [this YouTube video](https://www.youtube.com/watch?v=0fKg7e37bQE).
+* If you are unfamiliar with GitHub, watch [this YouTube video](https://www.youtube.com/watch?v=0fKg7e37bQE).
 * A [simple git cheatsheet](http://rogerdudler.github.io/git-guide/).
 * A [complete reference](http://www.git-scm.com/book/en/v2).
 * I suggest using the command line or the IntelliJ integration to interact with Git, but in a pinch [this GUI](https://desktop.github.com/) might be useful.
