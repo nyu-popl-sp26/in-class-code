@@ -23,3 +23,7 @@ my_triple.toString
 my_triple.updateFirst(1)
 my_triple.updateSecond(2)
 my_triple.updateThird(17)
+
+
+
+
