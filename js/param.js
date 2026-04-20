@@ -59,4 +59,3 @@ repeat(() => u.length > 3)(() => { console.log(u.length); const n = Math.random(
 // Print the contents of the array 
 let i = 0; 
 my_for(() => i < 3)(() => (console.log(u[i]), i = i + 1))
-
